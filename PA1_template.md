@@ -54,7 +54,7 @@ across all days (y-axis)**
 ```r
 stepsByInterval <- aggregate(steps ~ interval, data = activity,
                              FUN = mean)
-plot(stepsByInterval, type = "l")
+plot(stepsByInterval, type = "l", main = "Average number of steps taken over 5 minute intervals")
 ```
 
 ![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4.png) 
